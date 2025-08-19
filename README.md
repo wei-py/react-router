@@ -75,3 +75,5 @@ pnpm i -D eslint @antfu/eslint-config
 pnpm dlx @antfu/eslint-config@latest
 npx @eslint/config-inspector
 pnpm i react-router
+pnpm install antd
+pnpm install @ant-design/icons
