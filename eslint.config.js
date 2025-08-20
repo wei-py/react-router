@@ -1,5 +1,6 @@
 // import { createRequire } from 'node:module'
 import antfu from "@antfu/eslint-config";
+import { ProgramUpdateLevel } from "typescript";
 
 // const require = createRequire(import.meta.url)
 // const autoImportJson = require('./types/.eslintrc-auto-import.json')
@@ -13,5 +14,8 @@ export default antfu({
   react: true,
   languageOptions: {
     // ...autoImportJson,
+  },
+  rules: {
+    "top-level-await": "ignore",
   },
 });
