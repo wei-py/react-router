@@ -1,7 +1,9 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "../layout";
-import About from "../pages/About";
 import Home from "../pages/Home";
+
+const sleep = (ms: number) =>
+  new Promise((resolve: (value: unknown) => void) => setTimeout(resolve, ms));
 
 const router = createBrowserRouter([
   {
@@ -15,7 +17,14 @@ const router = createBrowserRouter([
       },
       {
         path: "about",
-        Component: About,
+        lazy: async () => {
+          await sleep(1000);
+          const module = await import("../pages/About");
+          return {
+            Component: module.default,
+          };
+        },
+        // Component: About,
       },
     ],
   },
