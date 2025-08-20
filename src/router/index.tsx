@@ -5,11 +5,12 @@ import Home from "../pages/Home";
 
 const router = createBrowserRouter([
   {
-    path: "/index",
+    path: "/",
     Component: Layout,
     children: [
       {
-        path: "home",
+        path: "home/:id",
+        // index: true,
         Component: Home,
       },
       {
@@ -17,14 +18,6 @@ const router = createBrowserRouter([
         Component: About,
       },
     ],
-  },
-  {
-    path: "/",
-    Component: Home,
-  },
-  {
-    path: "/about",
-    Component: About,
   },
 ]);
 
