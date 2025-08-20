@@ -20,5 +20,11 @@ export default function Menu() {
       icon: <AppstoreOutlined />,
     },
   ];
-  return <AntdMenu onClick={handleClick} style={{ height: "100vh" }} items={menuItems} />;
+  return (
+    <AntdMenu
+      onClick={handleClick}
+      style={{ height: "100vh" }}
+      items={menuItems}
+    />
+  );
 }
