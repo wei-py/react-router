@@ -1,10 +1,12 @@
 ## 声明模式
+
 - 路由
   - NavLink
 - url
 - 导航
 
 ## 数据模式 推荐
+
 - 路由
 - 路由对k象
 - 操作
@@ -13,6 +15,7 @@
 - 自定义框架
 
 ## 路由模式
+
 - createBrowserRouter
 - createHashRouter
 - createMemoRouter
@@ -30,6 +33,7 @@
 - 动态路由
 
 ## 传参数
+
 - query
   - 搜索和分页
 - params
@@ -39,6 +43,7 @@
   - 缺点不能分享
 
 ## 懒加载
+
 - lazy
   - 使用 navigation
 
@@ -52,6 +57,7 @@
 - git add
 
 ## 编辑器
+
 - pnpm dev
 - yazi
 - lazygit
