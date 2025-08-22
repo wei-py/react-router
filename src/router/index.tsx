@@ -65,6 +65,15 @@ const router = createBrowserRouter([
         },
         // Component: About,
       },
+      {
+        path: "store",
+        lazy: async () => {
+          const module = await import("../pages/Store");
+          return {
+            Component: module.default,
+          };
+        },
+      },
     ],
   },
   {
