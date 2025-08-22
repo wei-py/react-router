@@ -50,3 +50,9 @@
 
 - store
 - git add
+
+## 编辑器
+- pnpm dev
+- yazi
+- lazygit
+- oco
