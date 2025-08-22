@@ -9,13 +9,15 @@ export default function Content() {
   log(navigation.state);
   return (
     <div>
-      {isLoading ? (
-        <Spin size="large" tip="Loading...">
-          <Alert description="............"></Alert>
-        </Spin>
-      ) : (
-        <Outlet />
-      )}
+      {isLoading
+        ? (
+            <Spin size="large" tip="Loading...">
+              <Alert description="............"></Alert>
+            </Spin>
+          )
+        : (
+            <Outlet />
+          )}
     </div>
   );
 }

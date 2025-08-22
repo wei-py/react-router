@@ -1,5 +1,5 @@
-import { AppstoreOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
+import { AppstoreOutlined } from "@ant-design/icons";
 import { Menu as AntdMenu } from "antd";
 import { useNavigate } from "react-router";
 

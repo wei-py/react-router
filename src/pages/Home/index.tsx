@@ -14,7 +14,7 @@ export default function Home() {
   const { data, success } = useLoaderData();
   const navigation = useNavigation();
   const actionData = useActionData();
-  log(actionData);
+  log(actionData, success);
 
   const submit = useSubmit();
   const onFinish = (values: any) => {
@@ -29,7 +29,9 @@ export default function Home() {
       <h1>{`Home ${id}`}</h1>
       {data.map((item: any) => (
         <div key={item.name}>
-          {item.name} {item.age}
+          {item.name}
+          {" "}
+          {item.age}
         </div>
       ))}
 

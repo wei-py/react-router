@@ -4,8 +4,9 @@ import Error from "../layout/error";
 import Home from "../pages/Home";
 import log from "../utils/log";
 
-const sleep = (ms: number) =>
-  new Promise((resolve: (value: unknown) => void) => setTimeout(resolve, ms));
+function sleep(ms: number) {
+  return new Promise((resolve: (value: unknown) => void) => setTimeout(resolve, ms));
+}
 
 const data = [
   { name: "John Doe", age: 18 },
