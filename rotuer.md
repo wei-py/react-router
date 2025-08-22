@@ -41,3 +41,12 @@
 ## 懒加载
 - lazy
   - 使用 navigation
+
+## 新增页面
+
+- router
+- pages
+- menu
+
+- store
+- git add
